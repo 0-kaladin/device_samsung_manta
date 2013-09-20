@@ -33,7 +33,6 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a15
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_ARCH_VARIANT_CPU := cortex-a15
-USE_LINARO_COMPILER_FLAGS= yes
 
 # Enable various prefetch optimizations
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -43,12 +42,11 @@ COMMON_GLOBAL_CFLAGS += -D__ARM_USE_PLD -D__ARM_CACHE_LINE_SIZE=64
 
 TARGET_KERNEL_SOURCE = kernel/samsung/manta
 TARGET_KERNEL_CONFIG = cyanogenmod_manta_defconfig
-# TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.8
 
 #Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_HAVE_BLUETOOTH_NO_STRICT= true
 
 TARGET_NO_BOOTLOADER := true
 
