@@ -33,6 +33,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a15
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_ARCH_VARIANT_CPU := cortex-a15
+USE_LINARO_COMPILER_FLAGS= yes
 
 # Enable various prefetch optimizations
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -47,6 +48,7 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 #Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_HAVE_BLUETOOTH_NO_STRICT= true
 
 TARGET_NO_BOOTLOADER := true
 
