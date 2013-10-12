@@ -32,7 +32,7 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a15
 TARGET_ARCH_VARIANT_CPU := cortex-a15
-USE_LINARO_COMPILER_FLAGS= yes
+# USE_LINARO_COMPILER_FLAGS= yes
 
 # Enable various prefetch optimizations
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
